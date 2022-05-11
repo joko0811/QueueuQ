@@ -5,5 +5,7 @@ services:
     build:  backend
   frontend:
     build:  frontend
+    volumes:
+      - ./frontend/build:/app/build
     ports:
       - "3000:3000"
